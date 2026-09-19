@@ -1,0 +1,23 @@
+# PyCharm
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Profiling
+*.prof
+
+# OS
+.DS_Store
+Thumbs.db

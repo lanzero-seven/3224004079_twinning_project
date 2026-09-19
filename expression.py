@@ -13,12 +13,16 @@ class ExpressionNode:
         self.operator = operator      # '+', '-', '*', '/'
         self.left = left
         self.right = right
+        # self._cached_value=None       # 性能优化
 
     def is_number(self) -> bool:
         return self.operator is None
 
     # ---------- 计算 ----------
     def evaluate(self) -> Fraction:
+        #if self._cached_value is not None:
+        #    return self._cached_value
+
         if self.is_number():
             return self.value
 
